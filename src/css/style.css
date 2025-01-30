@@ -1,15 +1,20 @@
 .conteiner {
   width: 100%;
-  height: 100vh;
+  
+ 
   font-family: Arial, Helvetica, sans-serif;
 }
 .homeScreenSupportScreen {
-  background-color: black;
-  height: 100vh;
+
+ flex-direction: column;
+ display: flex;
+ gap: 30px;
+ background-color: black;
 }
 header {
   width: 100%;
   display: flex;
+  margin-bottom: 50px;
   justify-content: center;
   background: linear-gradient(
     90deg,
@@ -93,6 +98,265 @@ a {
 .hidden {
   display: none;
 }
+.slideTab .slide img {
+    width: 300px;
+    height: 300px;
+  }
+  .slideTab {
+    flex-direction: column;
+    display: flex;
+    gap: 50px;
+    width: 90%;
+    margin-top: 50px;
+    margin-bottom: 600px;
+    margin-inline: auto;
+  /*   background-color: aqua; */
+    color: white;
+    padding: 20px;
+  }
+  .horizontalLine {
+    width: 150px;
+    height: 2px;
+    background: linear-gradient(
+      90deg,
+      rgba(193, 92, 25, 1) 1%,
+      rgba(193, 84, 43, 1) 12%,
+      rgba(193, 25, 175, 0.6026785714285714) 100%,
+      rgba(193, 25, 175, 0.6026785714285714) 100%
+    );
+  }
+  .slide {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .slide .information {
+    gap: 20px;
+    flex-direction: column;
+    display: flex;
+  }
+  .slide .information .referenceName {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  .slide .information .title {
+    width: 600px;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  .slide .information .descriticon {
+    width: 575px;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .slideTab .slide .buttons{
+      display: flex;
+      gap: 20px;
+      margin-top: 20px;
+  }
+  .slideTab .slide button{
+      border: none;
+      width: 200px;
+      height: 20px;
+      padding: 20px;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+  }
+  .slideTab .slide .buttons .register{
+  border: 2px solid purple;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  }
+  .slideTab .slide .buttons .searchEvents{
+      color: white;
+      font-weight: bold;
+  
+      background: linear-gradient(
+      90deg,
+      rgba(193, 92, 25, 1) 1%,
+      rgba(193, 84, 43, 1) 12%,
+      rgba(193, 25, 175, 0.6026785714285714) 100%,
+      rgba(193, 25, 175, 0.6026785714285714) 100%
+    );
+  }
+
+  .event{
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+  }
+  .event img {
+    width: 600px;
+    height: 408px;
+    object-fit: cover;
+    
+}
+  .event .informations{
+    flex-direction: column;
+    display: flex;
+    gap: 20px;
+  }
+  .event .informations .title{
+    font-size: 35px;
+    font-weight: bold;
+  }
+  .event .informations .descrition{
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .event .informations .button{
+    display: flex;
+    justify-content: center;
+  }
+.event .informations .button button{
+    border: none;
+    width: 200px;
+    height: 20px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: white;
+    font-weight: bold;
+    background: linear-gradient( rgba(193, 92, 25, 1) 1%,
+    rgba(193, 84, 43, 1) 12%,
+    rgba(193, 25, 175, 0.6026785714285714) 100%,
+    rgba(193, 25, 175, 0.6026785714285714) 100%
+  );
+}
+.brands img{
+    width: 209px;
+    height: 209px;
+    object-fit: cover;
+}
+.brands{
+    width: 205px;
+    padding: 5px;
+    border: 2px solid white;
+    display: flex;
+   flex-direction: column; 
+    align-items: center;
+    gap: 10px;
+}
+.featuredBrands{
+    margin-top: 50px;
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background: linear-gradient(120deg, rgb(5, 5, 112) 0%, blue 100%);
+}
+.featuredBrand{
+    width: 100%;
+    margin-top: 40px;
+   /*  flex-direction: column; */
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    gap: 20px;
+   
+}
+.featuredBrands .title{
+font-size: 28px;
+}
+
+.searchScreenSupportScreen{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(180deg, black 0%, red 100%);
+}
+.search{
+    margin-top: 40px;
+    border-radius: 14px;
+    width: 80%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.719);
+    border: 1 solid rgba(255, 255, 255, 0.719);
+}
+.search .title{
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+.buttonTab{
+    width: 100%;
+    display: flex;
+    gap: 10px ;
+}
+.buttonTab input{
+    width: 80%;
+    padding: 4px;
+}
+.buttonTab .button{
+    width: 20%;
+    padding: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border: none;
+    color: white;
+    font-weight: bold;
+    background: linear-gradient(
+        90deg,
+        rgba(193, 92, 25, 1) 1%,
+        rgba(193, 84, 43, 1) 12%,
+        rgba(193, 25, 175, 0.6026785714285714) 100%,
+        rgba(193, 25, 175, 0.6026785714285714) 100%
+      );
+}
+.car img{
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    }
+    .car{
+        width: 250px;
+        height: 240px;
+    background-color: rgb(59, 59, 116);
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+    }
+    .searchRender{
+        width: 100%;
+        display: flex;
+        gap: 15px;
+        padding: 2px;
+     flex-wrap: wrap;
+     justify-content: center;
+    }
+
+.animation{
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateY(-100%);
+    
+    transition: all 2s;
+}
+.show{
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateY(0%);
+    transition: all 2s;
+}
+
+
+
 
 @media (max-width: 800px) {
   .icon {
@@ -120,4 +384,98 @@ a {
     top: 0;
     left: 0;
   }
+
+  .searchScreenSupportScreen{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    background: linear-gradient(180deg, black 0%, red 100%);
+}
+
+.buttonTab{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    gap: 10px ;
+}
+.buttonTab input{
+    width: 100%;
+    padding: 4px;
+}
+.buttonTab .button{
+    width: 100%;
+    padding: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border: none;
+    color: white;
+    font-weight: bold;
+    background: linear-gradient(
+        90deg,
+        rgba(193, 92, 25, 1) 1%,
+        rgba(193, 84, 43, 1) 12%,
+        rgba(193, 25, 175, 0.6026785714285714) 100%,
+        rgba(193, 25, 175, 0.6026785714285714) 100%
+      );
+}
+
+.slideTab .slide img {
+    width: 300px;
+    height: 300px;
+    display: none;
+  }
+  .horizontalLine {
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(
+      90deg,
+      rgba(193, 92, 25, 1) 1%,
+      rgba(193, 84, 43, 1) 12%,
+      rgba(193, 25, 175, 0.6026785714285714) 100%,
+      rgba(193, 25, 175, 0.6026785714285714) 100%
+    );
+  }
+  .slide .information {
+    width: 100%;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+  }
+  .event .informations .title{
+    width: 100%;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  .event .informations .descrition{
+    width: 100%;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .event{
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .featuredBrand{
+    width: 100%;
+    margin-top: 40px;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    gap: 20px;
+   
+}
 }
