@@ -25,10 +25,16 @@ nav {
 nav ul {
   padding: 40px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
 }
-nav ul li {
+nav ul .space{
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-between;
+}
+nav ul .space li {
   color: white;
   font-size: 24px;
   font-weight: bold;
@@ -51,32 +57,33 @@ a {
   padding: 5px;
   display: none;
 }
-.closeButton{
-    color: white;
+.closeButton {
+  color: white;
   width: 30px;
   height: 30px;
   padding: 5px;
- 
 }
 .mobileIcons {
-  width: 100%;
+    /* left: 0; */
+  width: 700px;
+ 
   padding-top: 20px;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  margin-inline: auto;
+  /* margin-inline: auto; */
   color: white;
   font-size: 18px;
   font-weight: bold;
-  margin-top: 1px;
+  border-top: 1px solid black;
   gap: 10px;
-  background: linear-gradient(
+ /*  background: linear-gradient(
     90deg,
     rgba(193, 92, 25, 0.719) 1%,
     rgba(193, 84, 43, 0.719) 12%,
     rgba(193, 25, 175, 0.6026785714285714) 100%,
     rgba(193, 25, 175, 0.6026785714285714) 100%
-  );
+  ); */
 }
 
 .icon {
@@ -97,5 +104,20 @@ a {
     height: 30px;
     padding: 5px;
     display: ruby;
+  }
+  header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(
+    90deg,
+    rgba(193, 92, 25, 0.719) 1%,
+    rgba(193, 84, 43, 0.719) 12%,
+    rgba(193, 25, 175, 0.6026785714285714) 100%,
+    rgba(193, 25, 175, 0.6026785714285714) 100%
+  );
+    position: fixed;
+    top: 0;
+    left: 0;
   }
 }

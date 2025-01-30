@@ -14,44 +14,52 @@
           <header>
             <nav>
               <ul>
-                <li>
-                  <div class="soon">Conect Tech</div>
-                </li>
-
-                <li>
-                  <div class="icons">
-                      <div onclick="onMobileMenu()" class="menuSoon">
-                          <img src="./src/img/menu-outline.svg" alt="" />
+                <div class="space">
+                    <li>
+                      <div class="soon">Conect Tech</div>
+                    </li>
+    
+                    <li>
+                      <div class="icons">
+                          <div onclick="onMobileMenu()" class="menuSoon">
+                              <img src="./src/img/menu-outline.svg" alt="" />
+                            </div>
+                            <div onclick="exitMobileMenu()" class="closeButton hidden"><img src="./src/img/close-circle-outline.svg" alt=""></div>
+                        <div class="icon">
+                          <div onclick="supportAlert()" class="home">
+                            <a>Home</a>
+                          </div>
+                          <div onclick="supportAlert()" class="description">
+                            <a>Descrição</a>
+                          </div>
+                          <div onclick="supportAlert()" class="emphoasis">
+                            <a>Destaques</a>
+                          </div>
                         </div>
-                        <div onclick="exitMobileMenu()" class="closeButton hidden"><img src="./src/img/close-circle-outline.svg" alt=""></div>
-                    <div class="icon">
-                      <div onclick="supportAlert()" class="home">
-                        <a>Home</a>
                       </div>
+                    </li>
+                </div>
+                
+                <li>
+                    <div class="mobileIcons hidden">
+                      <div onclick="supportAlert()" class="home"><a>Home</a></div>
+          
                       <div onclick="supportAlert()" class="description">
                         <a>Descrição</a>
                       </div>
-                      <div onclick="supportAlert()" class="emphoasis">
+          
+                      <div
+                        div onclick="supportAlert()" class="emphoasis">
                         <a>Destaques</a>
                       </div>
                     </div>
-                  </div>
                 </li>
+
               </ul>
             </nav>
           </header>
-          <div class="mobileIcons hidden">
-            <div onclick="supportAlert()" class="home"><a>Home</a></div>
 
-            <div onclick="supportAlert()" class="description">
-              <a>Descrição</a>
-            </div>
-
-            <div
-              div onclick="supportAlert()" class="emphoasis">
-              <a>Destaques</a>
-            </div>
-          </div>
+         
         </div>
       </div>
     </div>
