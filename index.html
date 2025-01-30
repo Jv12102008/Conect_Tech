@@ -3,20 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Conect Tech</title>
+    <title>S&B Auto</title>
     <link rel="stylesheet" href="./src/css/reset.css" />
     <link rel="stylesheet" href="./src/css/style.css" />
   </head>
   <body>
     <div class="conteiner">
-      <div class="homeScreen">
+      <div class="homeScreen ">
         <div class="homeScreenSupportScreen">
           <header>
             <nav>
               <ul>
                 <div class="space">
                     <li>
-                      <div class="soon">Conect Tech</div>
+                      <div class="soon">S&B Automotivo</div>
                     </li>
     
                     <li>
@@ -59,9 +59,54 @@
             </nav>
           </header>
 
-         
+          <div class="slideTab">
+            <div class="slide animation">
+                <div class="information">
+                  <div class="referenceName">By S&B Automotivo</div>
+                  <div class="horizontalLine"></div>
+                  <div class="title">A maior empresa automotiva do Brasil!</div>
+                  <div class="descriticon">Encontre o seu sonho e o dirija!</div>
+                  <div class="buttons">
+                    <button onclick="onSearch()" class="searchEvents">Ver Eventos</button>
+                    <button onclick="supportAlert()" class="register">cadastre-se</button>
+                  </div>
+              </div>
+              <img src="./src/img/—Pngtree—auto industry figure building maintenance_4075818.png" alt="">
+            </div>
+
+            <div class="event animation">
+                <img src="https://aterraambiental.com/wp-content/uploads/2020/09/aterra-industria-automotiva-residuos.jpg" alt="">
+                <div class="informations">
+                    <div class="title ">Eventos são oportunidades</div>
+                    <div class="descrition"> A S&B é sinônimo de exclusividade no mercado automotivo de luxo. Nosso compromisso é conectar você aos veículos mais sofisticados e inovadores, oferecendo uma experiência personalizada e impecável. Mais do que carros, entregamos status, desempenho e excelência, reservados. 
+                    Na S&B, cada detalhe é importante. Nossa seleção de veículos de luxo reflete o mais alto padrão de qualidade e design, ideal para quem valoriza exclusividade e prestígio. Aqui, não vendemos apenas automóveis, mas proporcionamos experiências.</div>
+                    <div onclick="onSearch()" class="button"><button>Ver Eventos</button></div>
+                </div>
+            </div>
+            <div class="featuredBrands">
+                <div class="title animation">Empresas em Destaques</div>
+                <div class="featuredBrand animation"></div>
+                
+
+            </div>
+          </div>
         </div>
       </div>
+
+      
+<div class="searchScreen hidden">
+    <div class="searchScreenSupportScreen">
+
+        <div class="search">
+            <div class="title">Buscar por marcas de carros..</div>
+            <div class="buttonTab">
+                <input id="search" type="text" placeholder="ex: lamborgini...">
+                <button onclick="fliterDataEmployee()" class="button">Buscar</button>
+            </div>      
+        </div>
+<div class="searchRender"></div>
+    </div>
+</div>
     </div>
     <script src="./src/js/app.js"></script>
   </body>
